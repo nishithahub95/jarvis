@@ -22,7 +22,7 @@ class CustomButton extends StatelessWidget {
       child: Center(child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(title,style: TextStyle(color: Color(0xff5C5C5C),),),
+          Text(title,style: TextStyle(color: Color(0xffFFFFFF),),),
         ],
       )),
     );

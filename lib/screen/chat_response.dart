@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:jarvis/Custom_button.dart';
-import 'package:jarvis/custome_textformfield.dart';
-import 'package:jarvis/jarvis_drawer.dart';
-import 'package:jarvis/saved_chat.dart';
+import 'package:jarvis/Screen/Widgets/Custom_button.dart';
+import 'package:jarvis/Screen/Widgets/chat_widgit.dart';
+import 'package:jarvis/Screen/Widgets/custome_textformfield.dart';
+import 'package:jarvis/Screen/Widgets/jarvis_drawer.dart';
+import 'package:jarvis/Screen/saved_chat.dart';
 
 class ChatResponse extends StatefulWidget {
   const ChatResponse({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class ChatResponse extends StatefulWidget {
 }
 
 class _ChatResponseState extends State<ChatResponse> {
+
   void showEraseMessageAlert() {
     showDialog(
         context: context,
@@ -91,7 +93,9 @@ final bool isTyping=true;
             Expanded(child:ListView.builder(
               itemCount: 5,
                 itemBuilder: (context,index){
-                return Text('Hello');
+                return ChatWidget(
+
+                );
 
                 })),
             const Align(
@@ -104,10 +108,17 @@ final bool isTyping=true;
     );
   }
 }
-class sendMessage extends StatelessWidget {
+class sendMessage extends StatefulWidget {
   const sendMessage({
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<sendMessage> createState() => _sendMessageState();
+}
+
+class _sendMessageState extends State<sendMessage> {
+  TextEditingController messageTypingController=TextEditingController();
   void showSaveAlert(BuildContext context) {
     showDialog(
         context: context,
@@ -145,6 +156,12 @@ class sendMessage extends StatelessWidget {
           );
         });
   }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    messageTypingController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -169,8 +186,9 @@ class sendMessage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20)),
               child: Row(
                 children: <Widget>[
-                  const Expanded(
-                    child: TextField(
+                   Expanded(
+                    child: TextFormField(
+                     controller: messageTypingController ,
                       decoration: InputDecoration.collapsed(
                         hintText: ' Send a message..',
                       ),

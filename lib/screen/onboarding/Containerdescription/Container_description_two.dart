@@ -1,10 +1,11 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:jarvis/Onboarding/ContainerDescription/signin_bottamsheet.dart';
-import 'package:jarvis/Onboarding/onboardingSecond.dart';
+import 'package:jarvis/Screen/Onboarding/BottamSheets/signin_bottamsheet.dart';
+import 'package:jarvis/Screen/Widgets/round_button.dart';
+import 'package:jarvis/Screen/chat_response.dart';
 
-import '../../round_button.dart';
+
 
 class ContainerDescriptionTwo extends StatelessWidget {
   const ContainerDescriptionTwo({
@@ -61,7 +62,7 @@ class ContainerDescriptionTwo extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: InkWell(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>OnboardingSecond()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ChatResponse()));
                   },
                   child: RoundButton(height: height, title: 'GET STARTED',)),
             ),

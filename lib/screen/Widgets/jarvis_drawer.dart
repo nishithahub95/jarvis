@@ -47,7 +47,7 @@ class JarvisDrawer extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Container(
-              height: 100,
+              height: 120,
               width: 200,
               decoration: BoxDecoration(
                   boxShadow: <BoxShadow>[

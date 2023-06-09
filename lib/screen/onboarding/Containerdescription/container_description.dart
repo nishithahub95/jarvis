@@ -1,10 +1,10 @@
 
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:jarvis/Onboarding/ContainerDescription/signin_bottamsheet.dart';
-import 'package:jarvis/Onboarding/onboardingSecond.dart';
+import 'package:jarvis/Screen/Onboarding/BottamSheets/signin_bottamsheet.dart';
+import 'package:jarvis/Screen/Onboarding/onboardingSecond.dart';
+import 'package:jarvis/Screen/Widgets/round_button.dart';
 
-import '../../round_button.dart';
 
 class ContainerDescription extends StatelessWidget {
   const ContainerDescription({

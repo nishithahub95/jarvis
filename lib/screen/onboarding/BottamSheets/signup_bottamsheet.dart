@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:jarvis/Onboarding/ContainerDescription/roun_signin_button.dart';
-import 'package:jarvis/signup_email.dart';
+import 'package:jarvis/Screen/Onboarding/BottamSheets/signin_bottamsheet.dart';
+import 'package:jarvis/Screen/Onboarding/ContainerDescription/roun_signin_button.dart';
+import 'package:jarvis/Screen/signup_email.dart';
 
 class SignUpBottamSheet extends StatefulWidget {
   const SignUpBottamSheet({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class _SignInBottamSheetState extends State<SignUpBottamSheet> {
             )
         ),
         builder: (builder){
-          return SignUpBottamSheet();
+          return SignInBottamSheet();
         }
     );
   }

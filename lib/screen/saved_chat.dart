@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:jarvis/custome_textformfield.dart';
-import 'package:jarvis/jarvis_drawer.dart';
+import 'package:jarvis/Screen/Widgets/custome_textformfield.dart';
+import 'package:jarvis/Screen/Widgets/jarvis_drawer.dart';
 
 class SavedChat extends StatefulWidget {
   const SavedChat({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jarvis/Onboarding/homeScreen.dart';
-import 'package:jarvis/chat_response.dart';
+import 'package:jarvis/Screen/Onboarding/homeScreen.dart';
+import 'package:jarvis/Screen/chat_response.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:jarvis/Onboarding/ContainerDescription/roun_signin_button.dart';
-import 'package:jarvis/Onboarding/ContainerDescription/signup_bottamsheet.dart';
-import 'package:jarvis/login_email.dart';
+import 'package:jarvis/Screen/Onboarding/BottamSheets/signup_bottamsheet.dart';
+import 'package:jarvis/Screen/Onboarding/ContainerDescription/roun_signin_button.dart';
+import 'package:jarvis/Screen/login_email.dart';
 class SignInBottamSheet extends StatefulWidget {
   const SignInBottamSheet({Key? key}) : super(key: key);
 

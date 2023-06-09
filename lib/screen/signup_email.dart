@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jarvis/Custom_button.dart';
-import 'package:jarvis/custome_textformfield.dart';
-import 'package:jarvis/forgot_password.dart';
+import 'package:jarvis/Screen/Widgets/Custom_button.dart';
+import 'package:jarvis/Screen/Widgets/custome_textformfield.dart';
+import 'package:jarvis/Screen/forgot_password.dart';
 
 class SignUpEmail extends StatefulWidget {
   const SignUpEmail({Key? key}) : super(key: key);

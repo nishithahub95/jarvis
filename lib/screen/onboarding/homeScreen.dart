@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jarvis/Onboarding/ContainerDescription/container_description.dart';
+import 'package:jarvis/Screen/Onboarding/ContainerDescription/container_description.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
